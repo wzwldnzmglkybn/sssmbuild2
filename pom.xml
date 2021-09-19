@@ -73,7 +73,6 @@
             <version>1.16.10</version>
         </dependency>
     </dependencies>
-
 <!--    静态资源导出问题-->
     <build>
         <resources>

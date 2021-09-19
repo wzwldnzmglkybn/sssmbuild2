@@ -1,6 +1,7 @@
 package com.kuang.service;
 
 import com.kuang.pojo.Books;
+import org.apache.ibatis.annotations.Param;
 
 
 import java.util.List;
@@ -21,4 +22,6 @@ public interface BookService {
     Books queryBookById(int id);
     //    查询全部的书
     List<Books> queryAllBook();
+    //    通过书名查询书
+    Books queryBookByName(String bookName);
 }

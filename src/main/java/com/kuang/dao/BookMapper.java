@@ -15,11 +15,13 @@ public interface BookMapper {
 //    增加一本书
     int addBook(Books books);
 //    删除一本书
-    int deleteBookById(@Param("bookId")int id);
+    int deleteBookById(@Param("bookID")int id);
 //    更新一本书
     int updateBook(Books books);
 //    查询一本书
-    Books queryBookById(@Param("bookId")int id);
+    Books queryBookById(@Param("bookID")int id);
 //    查询全部的书
     List<Books> queryAllBook();
+//    通过书名查询书
+    Books queryBookByName(@Param("bookName") String bookName);
 }
